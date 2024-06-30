@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+:root{
+    --cor1: #002153;
+    --cor2: #CF0921;
+    --fonte-1: "Roboto", sans-serif;
+    --fonte-2: "Great Vibes", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: url('imagens/predio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+}
+
+header{
+   font-family: var(--fonte-1);
+}
+
+img{
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+    background-color: white;
+}
+
+#img-area{
+    background-color: white;
+    height: 65px;
+}
+
+#itens{
+    background-color: var(--cor2);
+    display: none;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    padding: 10px 0px;
+    border: 1px solid white;
+}
+
+li:hover{
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+#x{
+    display: none;
+}
+
+.material-symbols-outlined{
+    background-color: var(--cor1);
+    color: white;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: #0c53bd;
+}
+
+#container{
+    background-color: white;
+    height: 530px;
+    width: 90vw;
+    margin: 10px auto;
+    border-radius: 20px;
+}
