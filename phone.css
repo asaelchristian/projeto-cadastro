@@ -26,67 +26,23 @@ body, html{
     background-attachment: fixed;
 }
 
-header{
-   font-family: var(--fonte-1);
+.navbar{
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
 }
 
-img{
-    display: block;
-    margin: auto;
-    padding: 20px 0px;
-    background-color: white;
+.navbar-toggler{
+    border: none;
+    outline: none;
 }
-
-#img-area{
-    background-color: white;
-    height: 65px;
-}
-
-#itens{
-    background-color: var(--cor2);
-    display: none;
-    text-align: center;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
-
-li{
-    padding: 10px 0px;
-    border: 1px solid white;
-}
-
-li:hover{
-    background-color: #ff0000;
-    cursor: pointer;
-}
-
-#x{
-    display: none;
-}
-
-.material-symbols-outlined{
-    background-color: var(--cor1);
-    color: white;
-    display: block;
-    width: 100vw;
-    text-align: center;
-    padding: 10px 0px;
-}
-
-.material-symbols-outlined:hover{
-    cursor: pointer;
-    background-color: #0c53bd;
-}
-
+  
+  
 #container{
     background-color: white;
     width: 90vw;
-    height: 80vh;
+    height: 550px;
     border-radius: 20px;
-    margin: 5px auto 0px auto;
+    margin: 70px auto 0px auto;
     padding: 20px;
 }
 
@@ -95,9 +51,33 @@ h1{
 }
 
 legend{
-    margin-left: 20px;
+    margin-top: 15px;
 }
 
 svg{
-    background-color: aqua;
+    background-color: var(--cor1);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+input[type="radio"]{
+    border: 1px solid #002153;
+}
+
+.mt-4{
+    color: white;
+    background-color: var(--cor2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mt-4:hover{
+    background-color: #eb394d;
+}
+
+footer{
+    background-color: whitesmoke;
+    margin-top: 10px;
 }
