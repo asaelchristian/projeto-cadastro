@@ -367,7 +367,7 @@
             </ul>
             <form class="d-flex mt-3" role="search">
               <input class="form-control me-2 shadow-none" type="search" placeholder="Pesquisar" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Buscar</button>
+              <button type="button" class="btn btn-outline-primary" onclick="buttonM()">Buscar</button>
             </form>
           </div>
         </div>
@@ -378,7 +378,7 @@
   <main>
             <div id="container">
                 <h1>Cadastro de Aluguel</h1>
-                <form action="cadastro.php" method="post" autocomplete="on">
+                <form action="cadastro.js" method="post" autocomplete="on">
                         <div class="input-group mb-3">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
@@ -409,22 +409,22 @@
                           </div>
                     
                 <fieldset>
-                        <legend>É sua primeira vez acessando esta página?</legend>
+                        <legend>É sua primeira vez alugando um imóvel da Paris Chansons?</legend>
                         <div class="form-check">
-                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="onYes()">
-                          <label class="form-check-label" for="flexRadioDefault1">
+                          <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="onYes()" required>
+                          <label class="form-check-label shadow-none" for="flexRadioDefault1">
                             Sim
                           </label>
                         </div>
                         <div class="form-check">
-                          <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                          <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
                           <label class="form-check-label shadow-none" for="flexRadioDefault2">
                             Não
                           </label>
                         </div>
                 </fieldset>
 
-                <input class="mt-4" type="submit" value="Cadastrar">
+                <input class="mt-2" type="submit" value="Cadastrar">
                 </form>
             </div>
   </main>
@@ -485,30 +485,7 @@
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.1/dist/sweetalert2.all.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script>
-      function onYes(){  
-            Swal.fire({
-  title: "Você deseja receber notificações da Paris Chansons?",
-  text: "Somos a maior e melhor companhia do ramo imobiliário do mundo, segundo a última pesquisa da Forbes feita em Julho de 2024.",
-  color: "#FFFFFF",
-  icon: "question",
-  background: "url('imagens/city-night.jpg') no-repeat center center",
-  showCancelButton: true,
-  cancelButtonText: "Não!",
-  confirmButtonColor: "#3085d6",
-  cancelButtonColor: "#d33",
-  confirmButtonText: "Sim!"
-}).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire({
-      title: "Confirmado!",
-      text: "Enviaremos nossas últimas novidades a você.",
-      icon: "success"
-    });
-  }
-});
-        }
-</script>
+<script src="cadastro.js"></script>
 </body>
 </html>
 
