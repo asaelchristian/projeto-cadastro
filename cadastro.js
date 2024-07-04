@@ -24,7 +24,7 @@ icon: "success"
 });
 }
 
-function buttonM(){
+function button(){
 Swal.fire({
     icon: "error",
     title: "Oops...",
