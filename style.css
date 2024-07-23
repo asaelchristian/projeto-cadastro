@@ -30,8 +30,27 @@ html, main{
     background-color: var(--cor1);
 }
 
-.material-symbols-outlined{
-    font-size: 20px;
+#button-flexbox{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#email:focus-within{
+    background-color: white !important;
+}
+
+#name:focus-within{
+    background-color: white !important; 
+}
+
+#password:focus-within{
+    background-color: white !important; 
+}
+
+#telephone:focus-within{
+    background-color: white !important; 
 }
 
 #container{
