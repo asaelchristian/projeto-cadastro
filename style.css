@@ -30,6 +30,13 @@ html, main{
     background-color: var(--cor1);
 }
 
+article{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 #button-flexbox{
     display: flex;
     flex-flow: row nowrap;
@@ -59,7 +66,7 @@ html, main{
     height: 550px;
     margin: 100px auto 40px auto;
     padding: 20px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 h1{
@@ -72,7 +79,7 @@ legend{
 
 input[type="submit"]{
     display: block;
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
@@ -104,7 +111,7 @@ input[type="radio"], label:hover{
 }
 
 .mt-2:hover{
-    background-color: #CF0921;
+    background-color: #a0081a;
 }
 
 .ms-3{
@@ -156,5 +163,12 @@ h5{
     #container{
         max-width: 770px;
         border-radius: 20px;
+    }
+}
+
+@media screen and (min-height: 1200px){
+    .py-6 {
+        padding-top: 3rem !important;
+        padding-bottom: 10rem !important;
     }
 }
